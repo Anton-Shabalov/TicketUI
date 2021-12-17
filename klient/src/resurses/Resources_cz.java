@@ -1,0 +1,123 @@
+package resurses;
+
+import java.util.ListResourceBundle;
+
+public class Resources_cz extends ListResourceBundle implements Naming {
+
+    private String name = "Czech";
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    private static final Object[][] contents =
+            {
+                    {"Войти", "Vejít do"},
+                    {"Зарегистрироваться", "Zaregistrujte se nyní"},
+                    {"Авторизация", "Povolení"},
+                    {"Логин", "Přihlásit se"},
+                    {"Пароль", "Heslo"},
+                    {"Назад", "Zpět k"},
+                    {"Данные, которые вы ввели не действительны", "Zadané údaje nejsou platné"},
+                    {"Поле пароль не может быть пустым", "Pole pro heslo nesmí být prázdné"},
+                    {"Поле логин не может быть пустым", "Pole pro přihlášení nesmí být prázdné"},
+                    {"Командная строка", "Příkazový řádek"},
+                    {"Таблица с элементами", "Tabulka s prvky"},
+                    {"Визуализация элементов", "Vykreslovací prvky"},
+                    {"Выход", "Výstup"},
+                    {"", ""},
+                    {"Привет", "Ahoj"},
+                    {"Введите команду, для простотра всех комманд введите <help>", "Zadejte příkaz, chcete-li zobrazit všechny příkazy, zadejte <help>"},
+                    {"Вы ввели пустую строку", "Zadali jste prázdný řádek"},
+                    {"Выполнить", "Vykonat"},
+                    {"Ваш запрос", "Váš požadavek"},
+                    {"Привет:", "Ahoj:"},
+                    {"Ид", "Id"},
+                    {"Название", "název"},
+                    {"Место", "Místo"},
+                    {"Ряд", "Řádek"},
+                    {"Расположение", "Umístění"},
+                    {"Цена", "Cena"},
+                    {"Скидка", "Sleva"},
+                    {"Тип билета", "Typ lístku"},
+                    {"Место проведения", "Umístění"},
+                    {"Название заведения", "Název zařízení"},
+
+                    {"Вместимость", "Kapacita"},
+                    {"Тип", "Typ"},
+                    {"Адрес", "Adresa"},
+                    {"Индекс", "Index"},
+                    {"X", "X"},
+                    {"Y", "Y"},
+                    {"Z", "Z"},
+                    {"Дата создания", "datum vytvoření"},
+                    {"Создатель", "Tvůrce"},
+                    {"Регистрация", "odbavit se"},
+                    {"Пользователь с такими именем уже существует", "Uživatel se stejným jménem již existuje"},
+                    {"Изменить", "Upravit"},
+                    {"Название мероприятия", "název události"},
+                    {"Тип заведения", "Typ zařízení"},
+                    {"Создатель:", "Tvůrce:"},
+                    {"Пожалуйста, введите название мероприятия, поле не должно быть пустым.", "Zadejte název události, pole nesmí být prázdné."},
+                    {"Вы введи пустую строку", "Zadáte prázdný řádek"},
+                    {"Пожалуйста, поочередно введите место и ряд , номер места должен быть больше -951 и представлен в виде целого числа, ряд в виде числа с плавающей точкой", "Zadejte umístění a řádek jeden po druhém, číslo umístění musí být větší než -951 a reprezentováno jako celé číslo, řádek jako číslo s plovoucí desetinnou čárkou"},
+                    {"Вами было введено не число", "Nezadali jste číslo"},
+                    {"Пожалуйста, введите цену билета, она может принимать числовое значение с плавающей точкой ", "Zadejte cenu lístku, může to být číselná hodnota s plovoucí desetinnou čárkou"},
+                    {"Введеные вами данные не похожи на число, которое требовалось ввести", "Zadané údaje nevypadají jako číslo, které jste zadali"},
+                    {"Пожалуйста, введите размер скидки в формате целого числа превышающего 0 и непревышабшего 100", "Zadejte velikost slevy ve formátu celého čísla většího než 0 a ne většího než 100"},
+                    {"Выберите из предложенного тип билета и введите его в командную строку VIP USUAL BUDGETARY CHEAP ", "Vyberte z navrhovaného typu tiketu a zadejte jej do příkazového řádku VIP USUAL BUDGETARY CHEAP "},
+                    {"Пожалуйста, выберите одно из предложенных значений", "Vyberte jednu z navrhovaných hodnot"},
+                    {"Пожалуйста, введите название заведения, где будет происходит мероприятие, название не может быть пустым", "Zadejte prosím název místa konání akce, název nesmí být prázdný"},
+                    {"Вы нчиего не ввели", "Nic jsi nezadal"},
+                    {"Введите общее количество мест в виде целого чила", "Zadejte celkový počet míst jako celé číslo"},
+                    {"Число должно быть больше нуля ", "Číslo musí být větší než nula"},
+                    {"Выберите из предложенного тип билета и введите его в командную строку PUB OPEN_AREA MALL ", "Vyberte z navrhovaného typu tiketu a zadejte jej do příkazového řádku PUB OPEN_AREA MALL "},
+                    {"Введите индекс, его длина не должна превышать 20 символов , также он не может быть пустым", "Zadejte index, jeho délka nesmí přesáhnout 20 znaků a nesmí být prázdný"},
+                    {"Введите кординаты точки по осям x y z  поочередно, x и z могут принимать только целочисленные значения, у число с плавающей точкой", "Zadejte souřadnice bodu podél os x x z střídavě, x a z mohou nabývat pouze celočíselné hodnoty, y je číslo s plovoucí desetinnou čárkou"},
+                    {"Введите номер поля, которое вы хотите изменить", "Zadejte číslo pole, které chcete změnit"},
+                    {"Название мероприятия - 1", "Název události - 1"},
+                    {"Место                - 2", "Místo - 2"},
+                    {"Цена                 - 3", "Cena - 3"},
+                    {"Скидка               - 4", "Sleva - 4"},
+                    {"Тип билета           - 5", "Typ lístku - 5"},
+                    {"Название заведения   - 6", "Název zařízení - 6"},
+                    {"Вместимость          - 7", "Kapacita - 7"},
+                    {"Тип заведения        - 8", "Typ zařízení - 8"},
+                    {"Адрес заведения      - 9", "Adresa zařízení - 9"},
+                    {"Введеные вами данные не соответствуют шаблону", "Zadaná data neodpovídají vzoru"},
+                    {"Вы ввели невалидное значение. Для повтора выполните запрос update (id)!", "Zadali jste neplatnou hodnotu. Chcete-li to zkusit znovu, spusťte dotaz update (id)!"},
+                    {"К сожалению у вас нет прав на чтение этого файла", "Bohužel nemáte oprávnění ke čtení tohoto souboru."},
+                    {"Файла с указанным именем не существует", "Soubor se zadaným názvem neexistuje"},
+                    {"ключ может принимать только целое числовое значение ", "klíč může mít pouze celočíselnou číselnou hodnotu"},
+                    {"ключ может принимать только целое числовое значение, строго больше нуля ", "klíč může mít pouze celočíselnou číselnou hodnotu, přísně větší než nula"},
+                    {"Такой команды не существует. Воскользуйтесь help для получения всех возможных команд", "Žádný takový příkaz neexistuje. Použijte nápovědu pro všechny možné příkazy"},
+                    {"данная команда принемает другое количество аргументов", "tento příkaz trvá jiný počet argumentů"},
+                    {"Что-то произошло с вашим логином, авторизируйтесь еще раз", "S vaším uživatelským jménem se něco stalo, přihlaste se prosím znovu"},
+                    {"Сервер временно недоступен, попробуйте позже", "Server je dočasně nedostupný, zkuste to prosím později"},
+                    {"Соединение установлено", "Spojení navázáno"},
+                    {"Элемент успещно обновлен", "Položka byla úspěšně aktualizována"},
+                    {"Z может быть только long", "Z možná jen long"},
+                    {"Y может быть только Double", "Y možná jenDouble"},
+                    {"X может быть только int", "X možná jen int"},
+                    {"Индекс не может быть больше 20 символов", "Rejstřík nesmí mít více než 20 znaků"},
+                    {"Вместимость может быть строго больше 0", "Kapacita může být přísně větší než 0"},
+                    {"Вметсимость может быть только числом", "Přizpůsobení může být pouze číslo"},
+                    {"Скидка может быть от 0 до 100", "Sleva může být od 0 do 100"},
+                    {"Поле скидка может быть только Long", "Pole slevy může být pouze Long"},
+                    {"цена может быть только float", "cena může být pouze float"},
+                    {"Поле ряд может быть только Double", "Řádek pole může být pouze Double"},
+                    {"Место может быть строго больше -951", "Místo může být přísně větší než -951"},
+                    {"В поле место не int значение", "V poli není místoint hodnota"},
+                    {"Имя не может быть пустым", "Název nesmí být prázdný"},
+                    {"Не все поля заполнены", "Ne všechna pole jsou vyplněna"},
+                    {"У вас нет прав на изменение этого обьекта", "K úpravě tohoto objektu nemáte oprávnění."},
+                    {"Подключиться не удалось", "Připojení selhalo"},
+                    {"Попробуйте запустить программу позже", "Zkuste program spustit později"},
+            };
+
+    @Override
+    protected Object[][] getContents() {
+        return contents;
+    }
+}

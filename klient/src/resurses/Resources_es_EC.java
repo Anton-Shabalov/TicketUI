@@ -1,0 +1,123 @@
+package resurses;
+
+import java.util.ListResourceBundle;
+
+public class Resources_es_EC extends ListResourceBundle implements Naming{
+
+    private String name = "Spanish";
+
+    private static final Object[][] contents =
+            {
+                    {"Войти", "Entrar"},
+                    {"Зарегистрироваться", "Regístrate ahora"},
+                    {"Авторизация", "Autorización"},
+                    {"Логин", "Acceso"},
+                    {"Пароль", "Contraseña"},
+                    {"Назад", "De regreso"},
+                    {"Данные, которые вы ввели не действительны", "Los datos que ingresaste no son válidos"},
+                    {"Поле пароль не может быть пустым", "El campo de contraseña no puede estar vacío"},
+                    {"Поле логин не может быть пустым", "El campo de inicio de sesión no puede estar vacío"},
+                    {"Командная строка", "Línea de comando"},
+                    {"Таблица с элементами", "Mesa con elementos"},
+                    {"Визуализация элементов", "Elementos de renderizado"},
+                    {"Выход", "Producción"},
+                    {"", ""},
+                    {"Привет", "Hola"},
+                    {"Введите команду, для простотра всех комманд введите <help>", "Ingrese un comando, para ver todos los comandos, ingrese<help>"},
+                    {"Вы ввели пустую строку", "Ingresaste una línea vacía"},
+                    {"Выполнить", "Ejecutar"},
+                    {"Ваш запрос", "Tu petición"},
+                    {"Привет:", "Hola:"},
+                    {"Ид", "id"},
+                    {"Название", "Nombre"},
+                    {"Место", "Un lugar"},
+                    {"Ряд", "Fila"},
+                    {"Расположение", "Localización"},
+                    {"Цена", "Precio"},
+                    {"Скидка", "Descuento"},
+                    {"Тип билета", "Tipo de entrada"},
+                    {"Место проведения", "Localización"},
+                    {"Название заведения", "Nombre del establecimiento"},
+
+                    {"Вместимость", "Capacidad"},
+                    {"Тип", "Un tipo"},
+                    {"Адрес", "Habla a"},
+                    {"Индекс", "Índice"},
+                    {"X", "X"},
+                    {"Y", "Y"},
+                    {"Z", "Z"},
+                    {"Дата создания", "fecha de creación"},
+                    {"Создатель", "El creador"},
+                    {"Регистрация", "registrarse"},
+                    {"Пользователь с такими именем уже существует", "Ya existe un usuario con el mismo nombre"},
+                    {"Изменить", "Editar"},
+                    {"Название мероприятия", "título del evento"},
+                    {"Тип заведения", "Tipo de facilidad"},
+                    {"Создатель:", "Creador:"},
+                    {"Пожалуйста, введите название мероприятия, поле не должно быть пустым.", "Por favor ingrese el nombre del evento, el campo no debe estar vacío."},
+                    {"Вы введи пустую строку", "Вы введи пустую строку"},
+                    {"Пожалуйста, поочередно введите место и ряд , номер места должен быть больше -951 и представлен в виде целого числа, ряд в виде числа с плавающей точкой", "Ingrese la ubicación y la fila una por una, el número de ubicación debe ser mayor que -951 y representado como un número entero, la fila como un número de punto flotante"},
+                    {"Вами было введено не число", "No ingresaste un número"},
+                    {"Пожалуйста, введите цену билета, она может принимать числовое значение с плавающей точкой ", "Ingrese el precio del boleto, puede ser un valor de punto flotante numérico"},
+                    {"Введеные вами данные не похожи на число, которое требовалось ввести", "Los datos que ingresó no se parecen al número que se le pidió que ingresara"},
+                    {"Пожалуйста, введите размер скидки в формате целого числа превышающего 0 и непревышабшего 100", "Ingrese el tamaño del descuento en el formato de un número entero mayor que 0 y no mayor que 100"},
+                    {"Выберите из предложенного тип билета и введите его в командную строку VIP USUAL BUDGETARY CHEAP ", "Seleccione del tipo de boleto propuesto e ingréselo en la línea de comandoVIP USUAL BUDGETARY CHEAP "},
+                    {"Пожалуйста, выберите одно из предложенных значений", "Seleccione uno de los valores sugeridos"},
+                    {"Пожалуйста, введите название заведения, где будет происходит мероприятие, название не может быть пустым", "Ingrese el nombre del lugar donde se llevará a cabo el evento, el nombre no puede estar vacío"},
+                    {"Вы нчиего не ввели", "No ingresaste nada"},
+                    {"Введите общее количество мест в виде целого чила", "Ingrese el número total de asientos como un número entero"},
+                    {"Число должно быть больше нуля ", "El número debe ser mayor que cero"},
+                    {"Выберите из предложенного тип билета и введите его в командную строку PUB OPEN_AREA MALL ", "Seleccione del tipo de boleto propuesto e ingréselo en la línea de comando PUB OPEN_AREA MALL "},
+                    {"Введите индекс, его длина не должна превышать 20 символов , также он не может быть пустым", "Ingrese el índice, su longitud no debe exceder los 20 caracteres y no puede estar vacío"},
+                    {"Введите кординаты точки по осям x y z  поочередно, x и z могут принимать только целочисленные значения, у число с плавающей точкой", "Ingrese las coordenadas del punto a lo largo de los ejes x y z alternativamente, x y z solo pueden tomar valores enteros, y es un número de punto flotante"},
+                    {"Введите номер поля, которое вы хотите изменить", "Ingrese el número del campo que desea cambiar"},
+                    {"Название мероприятия - 1", "Nombre del evento - 1"},
+                    {"Место                - 2", "Lugar - 2"},
+                    {"Цена                 - 3", "Precio - 3"},
+                    {"Скидка               - 4", "Descuento - 4"},
+                    {"Тип билета           - 5", "Tipo de entrada - 5"},
+                    {"Название заведения   - 6", "Nombre de la instalación - 6"},
+                    {"Вместимость          - 7", "Capacidad - 7"},
+                    {"Тип заведения        - 8", "Tipo de instalación - 8"},
+                    {"Адрес заведения      - 9", "Dirección de la instalación - 9"},
+                    {"Введеные вами данные не соответствуют шаблону", "Los datos que ingresó no coinciden con el patrón"},
+                    {"Вы ввели невалидное значение. Для повтора выполните запрос update (id)!", "Ingresaste un valor no válido. Para volver a intentarlo, ejecuta la consulta update (id)!"},
+                    {"К сожалению у вас нет прав на чтение этого файла", "Desafortunadamente, no tienes permiso para leer este archivo."},
+                    {"Файла с указанным именем не существует", "El archivo con el nombre especificado no existe"},
+                    {"ключ может принимать только целое числовое значение ", "la clave solo puede tomar un valor numérico entero"},
+                    {"ключ может принимать только целое числовое значение, строго больше нуля ", "la clave solo puede tomar un valor numérico entero, estrictamente mayor que cero"},
+                    {"Такой команды не существует. Воскользуйтесь help для получения всех возможных команд", "No existe tal comando. Utilice la ayuda para todos los comandos posibles"},
+                    {"данная команда принемает другое количество аргументов", "este comando toma un número diferente de argumentos"},
+                    {"Что-то произошло с вашим логином, авторизируйтесь еще раз", "Algo sucedió con su nombre de usuario, inicie sesión nuevamente"},
+                    {"Сервер временно недоступен, попробуйте позже", "El servidor no está disponible temporalmente. Vuelve a intentarlo más tarde."},
+                    {"Соединение установлено", "Conexión establecida"},
+                    {"Элемент успещно обновлен", "El artículo se ha actualizado correctamente"},
+                    {"Z может быть только long", "Z tal vez solo long"},
+                    {"Y может быть только Double", "Y tal vez solo Double"},
+                    {"X может быть только int", "X tal vez solo int"},
+                    {"Индекс не может быть больше 20 символов", "El índice no puede tener más de 20 caracteres"},
+                    {"Вместимость может быть строго больше 0", "La capacidad puede ser estrictamente superior a 0"},
+                    {"Вметсимость может быть только числом", "El ajuste solo puede ser un número"},
+                    {"Скидка может быть от 0 до 100", "El descuento puede ser de 0 a 100"},
+                    {"Поле скидка может быть только Long", "El campo de descuento solo puede ser Long"},
+                    {"цена может быть только float", "el precio solo puede ser float"},
+                    {"Поле ряд может быть только Double", "La fila de campo solo puede ser Double"},
+                    {"Место может быть строго больше -951", "El lugar puede ser estrictamente mayor que -951"},
+                    {"В поле место не int значение", "En el campo, el lugar no es un valor int"},
+                    {"Имя не может быть пустым", "El nombre no puede estar vacío"},
+                    {"Не все поля заполнены", "No todos los campos están llenos"},
+                    {"У вас нет прав на изменение этого обьекта", "No tienes permiso para modificar este objeto."},
+                    {"Подключиться не удалось", "Conexión fallida"},
+                    {"Попробуйте запустить программу позже", "Intente ejecutar el programa más tarde"},
+            };
+
+    @Override
+    protected Object[][] getContents() {
+        return contents;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+}

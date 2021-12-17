@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.controllerChangeTicket">
+
+    <children>
+        <ImageView fitHeight="475.0" fitWidth="800.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/background.jpg" />
+            </image>
+        </ImageView>
+        <Text fx:id="hi" fill="WHITE" layoutX="539.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Привет:" textAlignment="RIGHT" wrappingWidth="253.21630859375">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Button fx:id="ButtonExit" layoutX="663.0" layoutY="409.0" mnemonicParsing="false" onAction="#ButtonExit" opacity="0.79" prefHeight="16.0" prefWidth="123.0" style="-fx-background-color: #d6f4ff#d6f4ff;" text="Выход">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+      <TextField fx:id="nameTicket" layoutX="54.0" layoutY="91.0" promptText="Название мероприятия" />
+      <TextField fx:id="mesto" layoutX="54.0" layoutY="148.0" promptText="Место" />
+      <Text fx:id="nameTicket_text" fill="WHITE" layoutX="54.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название мероприятия" />
+      <Text fx:id="mesto_Text" fill="WHITE" layoutX="54.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Место" />
+      <TextField fx:id="ryad" layoutX="54.0" layoutY="207.0" promptText="Ряд" />
+      <Text fx:id="ryad_text" fill="WHITE" layoutX="54.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ряд" />
+      <TextField fx:id="price" layoutX="54.0" layoutY="261.0" promptText="Цена" />
+      <Text fx:id="priceText" fill="WHITE" layoutX="54.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" />
+      <TextField fx:id="discount" layoutX="54.0" layoutY="324.0" promptText="Скидка" />
+      <Text fx:id="discountText" fill="WHITE" layoutX="54.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Скидка" />
+      <ChoiceBox fx:id="typeTicket" layoutX="260.0" layoutY="91.0" prefHeight="26.0" prefWidth="123.0" />
+      <Text fx:id="typeTicketText" fill="WHITE" layoutX="260.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип билета" />
+      <TextField fx:id="nameVenue" layoutX="583.0" layoutY="91.0" promptText="Название заведения" />
+      <Text fx:id="nameVenueText" fill="WHITE" layoutX="583.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название заведения" />
+      <TextField fx:id="capacity" layoutX="583.0" layoutY="145.0" promptText="Вместимость" />
+      <Text fx:id="capacityText" fill="WHITE" layoutX="583.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вместимость" />
+      <ChoiceBox fx:id="typeVenue" layoutX="416.0" layoutY="90.0" prefHeight="26.0" prefWidth="123.0" />
+      <Text fx:id="TypeVenueText" fill="WHITE" layoutX="416.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип заведения" />
+      <TextField fx:id="zipcode" layoutX="583.0" layoutY="206.0" promptText="индекс" />
+      <Text fx:id="zipCOdeText" fill="WHITE" layoutX="583.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Индекс" />
+      <TextField layoutX="583.0" layoutY="260.0" promptText="X" fx:id="xVenue" />
+      <Text fill="WHITE" layoutX="583.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+      <TextField fx:id="yVenue" layoutX="581.0" layoutY="314.0" promptText="Y" />
+      <Text fill="WHITE" layoutX="581.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+      <TextField fx:id="zVenue" layoutX="581.0" layoutY="363.0" promptText="Z" />
+      <Text fill="WHITE" layoutX="581.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z" />
+      <Text fx:id="nameCreatorTXT" fill="WHITE" layoutX="262.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Создатель:" wrappingWidth="102.21630859375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="status" fill="WHITE" layoutX="-9.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="808.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="update" layoutX="338.0" layoutY="409.0" mnemonicParsing="false" onAction="#Buttonupdate" opacity="0.79" prefHeight="16.0" prefWidth="123.0" style="-fx-background-color: #d6f4ff#d6f4ff;" text="Изменить">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="60.0" layoutY="409.0" mnemonicParsing="false" onAction="#setButtonback" opacity="0.79" prefHeight="16.0" prefWidth="123.0" style="-fx-background-color: #d6f4ff#d6f4ff;" text="Назад">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+        <ImageView fx:id="cz" fitHeight="19.0" fitWidth="25.0" onMouseClicked="#buttonCS" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/CZ.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ru" fitHeight="19.0" fitWidth="25.0" layoutX="75.0" onMouseClicked="#buttonRU" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/RU.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="es" fitHeight="19.0" fitWidth="25.0" layoutX="50.0" onMouseClicked="#buttonES" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/sp.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="sw" fitHeight="19.0" fitWidth="25.0" layoutX="25.0" onMouseClicked="#buttonSV" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/SW.png" />
+            </image>
+        </ImageView>
+      <Text fx:id="nameUser" fill="WHITE" layoutX="714.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="77.76513671875011">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameCreator" fill="WHITE" layoutX="262.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.21630859375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>

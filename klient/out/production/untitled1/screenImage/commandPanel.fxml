@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.controllCommandPanel">
+    <children>
+        <ImageView fitHeight="475.0" fitWidth="800.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/background.jpg" />
+            </image>
+        </ImageView>
+        <Text fx:id="hi" fill="WHITE" layoutX="544.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Привет:" textAlignment="RIGHT" wrappingWidth="253.21630859375">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Button fx:id="ButtonExit" layoutX="662.0" layoutY="404.0" mnemonicParsing="false" onAction="#ButtonExit" opacity="0.79" prefHeight="16.0" prefWidth="123.0" style="-fx-background-color: #d6f4ff#d6f4ff;" text="Выход">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="ButtonBack" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#buttonBack" opacity="0.79" prefHeight="16.0" prefWidth="123.0" style="-fx-background-color: #d6f4ff#d6f4ff;" text="Назад">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="commanList" layoutX="63.0" layoutY="107.0" prefHeight="288.0" prefWidth="674.0" wrapText="true" />
+      <Button fx:id="ButtonExecute" layoutX="605.0" layoutY="72.0" mnemonicParsing="false" onAction="#buttonExecute" opacity="0.73" prefHeight="26.0" prefWidth="132.0" text="Выполнить" />
+      <TextField fx:id="commandLine" layoutX="63.0" layoutY="73.0" prefHeight="26.0" prefWidth="533.0" promptText="Ваш запрос" />
+      <Text fx:id="statusBar" fill="RED" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="804.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+        <ImageView fx:id="cz" fitHeight="19.0" fitWidth="25.0" onMouseClicked="#buttonCS" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/CZ.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ru" fitHeight="19.0" fitWidth="25.0" layoutX="75.0" onMouseClicked="#buttonRU" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/RU.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="es" fitHeight="19.0" fitWidth="25.0" layoutX="50.0" onMouseClicked="#buttonES" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/sp.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="sw" fitHeight="19.0" fitWidth="25.0" layoutX="25.0" onMouseClicked="#buttonSV" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resurses/SW.png" />
+            </image>
+        </ImageView>
+      <Text fx:id="adminName" fill="WHITE" layoutX="710.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="79.70703125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>
